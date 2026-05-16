@@ -1,6 +1,6 @@
 !
 
-hostname r-csr01
+hostname r-csr02
 
 !
 
@@ -14,6 +14,9 @@ ip domain name lab.com
 !
 
 interface GigabitEthernet1
- description SITE_Houston_MGMT
+ description SITE_Boston_MGMT
+ negotiation auto
+ no mop enabled
+ no mop sysid
 
 end
